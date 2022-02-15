@@ -3,7 +3,7 @@ const $botonCalcular = document.querySelector("#calcular");
 $botonCalcular.onclick = function() {
   const salarioAnual = Number(document.querySelector("#salario-anual").value);
   const mesesAño = 12
-  var salarioMensual
+  let salarioMensual
 
   salarioMensual = salarioAnual / mesesAño;
 
