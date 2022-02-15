@@ -13,8 +13,8 @@ $botonIngresar.onclick = function() {
 }
 
 function cambiarH1 (primerNombre, segundoNombre, apellido) {
-    const H1 = document.querySelector("h1")
-    H1.style.fontSize = "60px"
-    H1.style.color = "blue"
-    return H1.innerText= `Bienvenido, ${primerNombre} ${segundoNombre} ${apellido}`
+    const CambiarH1 = document.querySelector("h1")
+    CambiarH1.style.fontSize = "60px"
+    CambiarH1.style.color = "blue"
+    return CambiarH1.innerText= `Bienvenido, ${primerNombre} ${segundoNombre} ${apellido}`
 }
