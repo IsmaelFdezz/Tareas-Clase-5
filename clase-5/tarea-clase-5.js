@@ -53,6 +53,7 @@ Ejemplo form:
 // al apretar el botón "Calcular tiempo total", debe mostrar en un
 // <strong> pre-creado el tiempo total de los videos.
 
+
 //TAREA: En otro archivo distinto,
 // Crear una lista de <ol> y <li> que contengan sólo números.
 // Convertir esos números a un array y:

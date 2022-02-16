@@ -3,6 +3,7 @@ const segundosEnUnMinuto = 60
 const minutosEnUnaHora = 60
 let resultado = document.querySelector("#resultado")
 
+
 $botonCalcular.onclick=function() {
     const $horasVideos = document.querySelectorAll(".horas")
     const $minutosVideos = document.querySelectorAll(".minutos")
