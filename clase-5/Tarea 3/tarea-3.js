@@ -4,9 +4,9 @@ const minutosEnUnaHora = 60
 let resultado = document.querySelector("#resultado")
 
 $botonCalcular.onclick=function() {
-    const $horasVideos = document.querySelector(".horas")
-    const $minutosVideos = document.querySelector(".minutos")
-    const $segundosVideos = document.querySelector(".segundos")
+    const $horasVideos = document.querySelectorAll(".horas")
+    const $minutosVideos = document.querySelectorAll(".minutos")
+    const $segundosVideos = document.querySelectorAll(".segundos")
     let totalHoras = 0
     let totalMinutos = 0
     let totalSegundos = 0
@@ -26,7 +26,7 @@ $botonCalcular.onclick=function() {
     for (let i = 0; i < $segundosVideos.length; i++) {
         totalSegundos += Number($segundosVideos[i].value)
     }
-    while (segundosTotal >= segundosEnUnMinuto) {
+    while (totalSegundos >= segundosEnUnMinuto) {
         totalMinutos  ++
         totalSegundos --
     }
