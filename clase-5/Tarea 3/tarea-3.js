@@ -20,7 +20,7 @@ $botonCalcular.onclick=function() {
     }
     while (totalMinutos >= minutosEnUnaHora) {
         totalHoras ++
-        totalMinutos --
+        totalMinutos = totalMinutos - minutosEnUnaHora
     }
 
     for (let i = 0; i < $segundosVideos.length; i++) {
@@ -28,7 +28,7 @@ $botonCalcular.onclick=function() {
     }
     while (totalSegundos >= segundosEnUnMinuto) {
         totalMinutos  ++
-        totalSegundos --
+        totalSegundos = totalSegundos - segundosEnUnMinuto
     }
 
     console.log(totalHoras)
