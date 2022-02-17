@@ -2,18 +2,18 @@ let emPromedio = document.querySelector("#promedio")
 let emMasPequenio = document.querySelector("#mas-pequenio")
 let emMasGrande = document.querySelector("#mas-grande")
 let emMasFrecuente = document.querySelector("#mas-frecuente")
+let $calcular = document.querySelector("#calcular")
 
 
-document.querySelector("#calcular").onclick = function() {
+ function crearArray() {
         const $numeros = document.querySelectorAll("li")
         const arrayNumeros = []
         for(let i = 0; i < $numeros.length; i++) {
-            arrayNumeros.push(Number(document.querySelectorAll("li")[i].innerText))
+            arrayNumeros.push($numeros[i].innerText)
         }
     
     function calcularPromedio(arrayNumeros) {
         let suma = 0
-        resultadoPromedio = 0
         for (let i = 0; i < arrayNumeros.length; i++) {
             suma += Number(arrayNumeros[i])
         }
@@ -44,8 +44,8 @@ document.querySelector("#calcular").onclick = function() {
         let contadorMaximo = 0
 
         for(let i = 0; i < arrayNumeros.length; i++) {
-            for(let u = 0; u < arrayNumeros.length; u++) {
-                if (arrayNumeros[i] === arrayNumeros[u]) {
+            for(let j = 0; j < arrayNumeros.length; j++) {
+                if (arrayNumeros[i] === arrayNumeros[j]) {
                     contadorRepeticiones ++
                 }
                 if (contadorRepeticiones > contadorMaximo){
@@ -89,9 +89,7 @@ function obtenerNumeroRepetido(arrayObjetivo) {
 }
     
 
-
-
-
+$calcular.onclick = () => { crearArray()}
 
 
 
